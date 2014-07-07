@@ -19,8 +19,8 @@ cd vector-tile-ascii/
 npm install
 
 # Fetch and decompress a vector tile from MapBox
-curl "https://a.tiles.mapbox.com/v3/mapbox.mapbox-streets-v5/14/15881/10561.vector.pbf" \
-  | openssl zlib -d > 10561.vector.pbf
+curl --compressed -o 10561.vector.pbf \
+  "https://a.tiles.mapbox.com/v3/mapbox.mapbox-streets-v5/14/15881/10561.vector.pbf"
 
 # View the tile
 node index.js 10561.vector.pbf
