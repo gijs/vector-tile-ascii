@@ -1,15 +1,28 @@
 {
   "name": "vector-tile-inspect",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Prints vector tiles as ASCII art",
   "main": "index.js",
   "dependencies": {
     "ansi": "~0.3.0",
-    "bresenham": "0.0.3",
-    "cli": "^0.6.3",
-    "foreach": "^2.0.4",
+    "bresenham": "~0.0.3",
+    "cli": "~0.6.3",
+    "foreach": "~2.0.4",
     "pbf": "~0.0.1",
     "vector-tile": "~0.1.1"
   },
+  "bin": {
+    "vector-tile-ascii": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chillyv/vector-tile-ascii.git"
+  },
+  "keywords": [
+    "ascii",
+    "geo",
+    "maps",
+    "openstreetmap"
+  ],
   "license": "BSD"
 }
