@@ -33,20 +33,26 @@ cli.main(function(args, options) {
 	}
 
 	each(args, function(fileName) {
-		renderTile(fileName, options);
+		var tile = loadTile(fileName);
+		if (tile == undefined) return;
+
+		renderTile(tile, options);
 	});
 });
 
 
-function renderTile(fileName, options) {
+function loadTile(fileName) {
 	try {
 		var data = new Pbf(fs.readFileSync(fileName));
-		var tile = new vt.VectorTile(data);
+		return new vt.VectorTile(data);
 	} catch (e) {
 		console.error('error: could not read tile')
 		return;
 	}
+}
 
+
+function renderTile(tile, options) {
 	var dim;
 	if (options.size) {
 		dim = Math.max(options.size, 0);
