@@ -13,17 +13,14 @@ Because it should be possible to download and view a single tile without configu
 ## Example
 
 ```bash
-git clone https://github.com/chillyv/vector-tile-ascii.git
-cd vector-tile-ascii/
-
-npm install
+npm install -g vector-tile-ascii
 
 # Fetch and decompress a vector tile from MapBox
 curl --compressed -o 10561.vector.pbf \
   "https://a.tiles.mapbox.com/v3/mapbox.mapbox-streets-v5/14/15881/10561.vector.pbf"
 
 # View the tile
-node index.js 10561.vector.pbf
+vector-tile-ascii 10561.vector.pbf
 ```
 
 Check it against the reference image:
