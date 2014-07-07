@@ -2,6 +2,8 @@
 
 ASCII renderer for OpenStreetMap vector tiles.
 
+![Screenshot](examples/screenshot.png)
+
 
 ## Why?
 
@@ -26,4 +28,4 @@ node index.js 10561.vector.pbf
 
 Check it against the reference image:
 
-http://a.tile.openstreetmap.org/14/15881/10561.png
+![Map tile](examples/10561.png)
