@@ -1,6 +1,6 @@
 {
   "name": "vector-tile-inspect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prints vector tiles as ASCII art",
   "main": "index.js",
   "dependencies": {
